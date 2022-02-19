@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "./Css/style.css";
+
+import Content_img from "./Component/Content_img";
+import imgtop from "./images/illustration-intro.svg";
+
+import CardBox from "./Component/CardBox";
+import QuestionSection from "./Component/QuestionSection";
+import Simplify from "./Component/Simplify";
+import Footer from "./Component/Footer";
+import Navbar from "./Component/Navbar";
+
+const contenttop = {
+  heading: "Bring everyone together to build better products.",
+  text: "Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.",
+  img: imgtop,
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="container">
+    <Navbar/>
+        <Content_img content={contenttop} />
+
+        <QuestionSection />
+        <CardBox />
+      </div>
+      <Simplify />
+
+      <Footer />
+    </>
   );
 }
 
