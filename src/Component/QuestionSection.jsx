@@ -25,7 +25,7 @@ const content = [
 export default function QuestionSection(props) {
   return (
     <div className="wrapper ">
-      <div className="row  ">
+      <div className="row questionrow  ">
         <div className="col6">
           <h2>What’s different about Manage?</h2>
           <p>

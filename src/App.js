@@ -1,7 +1,8 @@
 import "./App.css";
 import "./Css/style.css";
+import "./Css/responsive.css";
 
-import Content_img from "./Component/Content_img";
+import Contentimg from "./Component/Content_img";
 import imgtop from "./images/illustration-intro.svg";
 
 import CardBox from "./Component/CardBox";
@@ -20,8 +21,8 @@ function App() {
   return (
     <>
       <div className="container">
-    <Navbar/>
-        <Content_img content={contenttop} />
+        <Navbar />
+        <Contentimg content={contenttop} />
 
         <QuestionSection />
         <CardBox />

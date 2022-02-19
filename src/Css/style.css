@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   letter-spacing: 1px;
+  /* border:2px solid red; */
 }
 :active,
 :hover,
@@ -109,7 +110,7 @@ p {
 
 .main-btn {
   display: inline-block;
-  padding: 0.425rem 2.875rem;
+  padding: 0.425rem 1.875rem;
   line-height: 1.5625rem;
   background-color: var(--primary-color);
   box-decoration-break: 0.9875rem solid var(--primary-color);
@@ -133,9 +134,9 @@ p {
 }
 
 .main-btn:hover {
-  background: transparent;
-  color: var(--primary-color);
-  border-color: var(--primary-color);
+  opacity: 0.8;
+  /* color: var(--primary-color); */
+  /* border-color: var(--primary-color); */
 }
 
 .wrapper {
@@ -158,12 +159,20 @@ p {
 .container {
   max-width: 1440px;
   padding: 0 30px;
+  background: url(../images/bg-simplify-section-desktop.svg);
+  background: var(--primary-color),
+    url(../images/bg-simplify-section-desktop.svg);
+  transition: all 1s;
 }
 /*================================================================================
                              custom css                                                   
 ================================================================================*/
 .col6 {
   width: calc(50% - 20px);
+  margin: 20px;
+}
+.items {
+  display: flex;
 }
 .my-4 {
   margin: 20px auto;
@@ -181,7 +190,7 @@ p {
   justify-content: space-between;
 }
 .col {
-  margin: 0 10px;
+  margin: 0 0px;
 }
 
 .col button {
@@ -203,6 +212,7 @@ p {
   display: inline-block;
   height: 100%;
   white-space: normal;
+  border-radius: 10px;
 }
 .boxShadow {
   /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
@@ -228,7 +238,7 @@ img {
   transform: translate(50%, -50%);
 }
 .mb5 {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .CardBox {
   overflow-x: auto;
@@ -324,7 +334,13 @@ nav .row {
   justify-content: space-between;
   align-items: center;
 }
+.items {
+  flex-grow: 1;
+  justify-content: space-between;
+}
 nav .row ul {
+  margin: auto;
+
   display: flex;
   justify-content: space-between;
 }
@@ -333,4 +349,23 @@ nav .row ul li {
   font-size: 20px;
   font-weight: 600;
   color: var(--secondary-color);
+}
+.logo {
+  width: 200px;
+}
+
+.hamburger {
+  display: none;
+}
+.hamburgeritmes {
+  text-align: center;
+  transition: all 0.8s ease-out 0.9s;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.smwraper .col {
+  margin: 0 10px;
+}
+.content {
+  margin: 10px 0;
 }

@@ -5,7 +5,7 @@ export default function Content_img(props) {
   console.log(props);
   return (
     <div className="wrapper ">
-      <div className="row align-center ">
+      <div className="row align-center contentimg ">
         <div className="col6">
           <h2>{props.content.heading}</h2>
           <p className="my-4">{props.content.text}</p>
