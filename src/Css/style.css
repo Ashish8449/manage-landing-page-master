@@ -293,7 +293,7 @@ footer row {
   align-items: flex-start;
 }
 footer ul {
-  width: calc(20% - 10px);
+  /* width: calc(20% - 10px); */
 }
 .mb10 {
   margin-bottom: 80px;
@@ -350,9 +350,6 @@ nav .row ul li {
   font-weight: 600;
   color: var(--secondary-color);
 }
-.logo {
-  width: 200px;
-}
 
 .hamburger {
   display: none;
@@ -368,4 +365,16 @@ nav .row ul li {
 }
 .content {
   margin: 10px 0;
+}
+.footerlist {
+  display: flex;
+  width: calc(50% - 20px);
+  justify-content: space-around;
+  align-items: stretch;
+}
+footer .col {
+  margin-right: 10px;
+}
+.copyRight {
+  text-align: center;
 }

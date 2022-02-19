@@ -36,7 +36,13 @@
    
   }
   .copyRight{
-      display: none;
+      text-align: center;;
+  }
+  .footerlist {
+    display: flex ;
+    width: calc(100% - 20px);
+    justify-content: center;
+    align-items: stretch;
   }
   footer .row .row {
       display: flex;
@@ -46,7 +52,7 @@
     align-items: space-between;
   }
   footer ul {
-    width: 50%;
+    margin:10px 40px;
     text-align: center;
   }
   footer .mb10 {

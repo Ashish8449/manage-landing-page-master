@@ -33,17 +33,18 @@ export default function Footer() {
             />
           </div>
         </div>
-        {list.map((item, indx) => (
-          <List key={indx} item={item} />
-        ))}
-
+        <div className=" footerlist">
+          {list.map((item, indx) => (
+            <List key={indx} item={item} />
+          ))}
+        </div>
         <div className="col3 ">
           <div className="mb10">
             <Search placeholder="Updates in your inbox…" />
           </div>
-          <CopyRight />
         </div>
       </div>
+      <CopyRight />
     </footer>
   );
 }
