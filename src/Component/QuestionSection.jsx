@@ -1,5 +1,7 @@
 import React from "react";
 import CardwithNumber from "./CardwithNumber";
+import H2 from "./H2";
+import Paragraph from "./Paragraph";
 
 const content = [
   {
@@ -27,16 +29,17 @@ export default function QuestionSection(props) {
     <div className="wrapper ">
       <div className="row questionrow  ">
         <div className="col6">
-          <h2>What’s different about Manage?</h2>
-          <p>
-            Manage provides all the functionality your team needs, without the
+          <H2 title="What’s different about Manage?" />
+
+          <Paragraph
+            text=" Manage provides all the functionality your team needs, without the
             complexity. Our software is tailor-made for modern digital product
-            teams.
-          </p>
+            teams."
+          />
         </div>
-     
+
         <div className="col6">
-          {content.map((item , indx) => (
+          {content.map((item, indx) => (
             <CardwithNumber key={indx} content={item} />
           ))}
         </div>

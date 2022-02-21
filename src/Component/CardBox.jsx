@@ -5,6 +5,7 @@ import AliBravo from "../images/avatar-ali.png";
 import RichardWatts from "../images/avatar-richard.png";
 import ShanaiGough from "../images/avatar-shanai.png";
 import Button from "./Button";
+import H2 from "./H2";
 
 const content = [
   {
@@ -33,7 +34,8 @@ const content = [
 export default function CardBox() {
   return (
     <div className="wrapper ">
-      <h2 className="text-center mb5 ">What they’ve said</h2>
+      <H2 title="What they’ve said" variant="text-center" />
+      <h2 className="text-center mb5 "></h2>
       <div className="justify-space-between CardBox mb5 ">
         {content.map((item, indx) => (
           <Card key={indx} content={item} />

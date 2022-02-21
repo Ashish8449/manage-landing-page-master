@@ -1,11 +1,15 @@
 import React from "react";
+import H3 from "./H3";
+import Image from "./Image";
+import Paragraph from "./Paragraph";
 
 export default function Card(props) {
   return (
     <div className="col4 relative text-center boxShadow cardBox ">
-      <img src={props.content.img} className="cardimg" alt="avtart1.jpg" />
-      <h3>{props.content.name}</h3>
-      <p>{props.content.text}</p>
+      <Image img={props.content.img} variant="cardimg" alt="avtart2.jpg" />
+      <H3 title={props.content.name} />
+
+      <Paragraph text={props.content.text} />
     </div>
   );
 }

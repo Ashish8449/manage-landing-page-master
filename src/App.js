@@ -24,9 +24,12 @@ function App() {
         <Navbar />
         <Contentimg content={contenttop} />
 
+
+      
         <QuestionSection />
-        <CardBox />
       </div>
+        <CardBox />
+     
       <Simplify />
 
       <Footer />

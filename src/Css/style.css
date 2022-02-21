@@ -135,8 +135,7 @@ p {
 
 .main-btn:hover {
   opacity: 0.8;
-  /* color: var(--primary-color); */
-  /* border-color: var(--primary-color); */
+
 }
 
 .wrapper {
@@ -159,9 +158,8 @@ p {
 .container {
   max-width: 1440px;
   padding: 0 30px;
-  background: url(../images/bg-simplify-section-desktop.svg);
-  background: var(--primary-color),
-    url(../images/bg-simplify-section-desktop.svg);
+
+
   transition: all 1s;
 }
 /*================================================================================
